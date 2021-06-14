@@ -16,17 +16,17 @@ void swap(int *x, int *y)
  * partition - divides the array in two parts
  * @array: array
  * @size: size of the array
- * @first: low value
- * @last: high value
- * Return: int i
+ * @first: lower value
+ * @last: higher value
+ * Return: index
  */
 int partition(int *array, size_t size, int first, int last)
 {
 	int pivot = array[last]; /*Pivot*/
-	int i = (first - 1); /* Index of smaller element (right position of pivo)t*/
+	int i = (first - 1); /* Index of smaller element (right position of pivot)*/
 	int j;
 
-	for (j = first; j <= last - 1; ++j)
+	for (j = first; j <= last - 1; j++)
 	{
 		/* If current element is smaller than the pivot*/
 		if (array[j] < pivot)
@@ -44,7 +44,7 @@ int partition(int *array, size_t size, int first, int last)
 	return (i + 1);
 }
 /**
- * sort_func - sorts the array
+ * sort_func - sorts the array in asc order
  * @array: array
  * @size: size of the array
  * @first: lower value
