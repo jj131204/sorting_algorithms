@@ -22,7 +22,7 @@ void swap(int *x, int *y)
  */
 int partition(int *array, size_t size, int first, int last)
 {
-	`int pivot = array[last]; /*Pivot*/
+	int pivot = array[last]; /*Pivot*/
 	int i = (first - 1); /* Index of smaller element (right position of pivot)*/
 	int j;
 
