@@ -7,7 +7,9 @@
  */
 void swap(int *x, int *y)
 {
-	int temp = *x;
+	int temp;
+
+	temp = *x;
 	*x = *y;
 	*y = temp;
 }
@@ -15,7 +17,6 @@ void swap(int *x, int *y)
 /**
  *  selection_sort - sorts an array of integers in ascending order
  *  using the Selection sort algorithm
- *
  * @array: The array to be printed
  * @size: Number of elements in @array
  */
