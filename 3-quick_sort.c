@@ -29,7 +29,7 @@ int partition(int *array, size_t size, int first, int last)
 	for (j = first; j <= last - 1; j++)
 	{
 		/* If current element is smaller than the pivot*/
-		if (array[j] < pivot)
+		if (array[j] <= pivot)
 		{
 			i++; /*Increment index of smaller element*/
 			swap(&array[i], &array[j]);
